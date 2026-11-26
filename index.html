@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classy Perfume</title>
+    <link rel="stylesheet" href="style1.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="intro-screen" id="intro-screen">
+        <div class="intro-content">
+            <div class="intro-logo"><i class="fa-solid fa-spray-can-sparkles"></i></div>
+            <p>THE ART OF FRAGRANCE</p>
+            <h1>Classy Perfume</h1>
+            <span>Discover a scent that stays with you.</span>
+        </div>
+    </div>
+
+    <nav class="navbar">
+        <a class="brand-link" href="index.html"><h1 class="logo">Perfumes</h1></a>
+        <button class="menu-toggle" id="menu-toggle" aria-label="Open navigation menu" aria-expanded="false">
+            <span></span><span></span><span></span>
+        </button>
+        <ul class="nav-menu" id="nav-menu">
+            <li><a href="#home"><i class="fa-solid fa-house nav-icon"></i>Home</a></li>
+            <li><a href="#products"><i class="fa-solid fa-bottle-droplet nav-icon"></i>Products</a></li>
+            <li><a href="#about"><i class="fa-regular fa-circle-question nav-icon"></i>About Us</a></li>
+            <li><a href="#contact"><i class="fa-regular fa-envelope nav-icon"></i>Contact Us</a></li>
+            <li><a href="cart.html"><i class="fa-solid fa-bag-shopping nav-icon"></i>Cart <span class="cart-count" id="nav-cart-count">0</span></a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section class="hero" id="home">
+            <p class="hero-tag">THE ART OF FRAGRANCE</p>
+            <h1>Discover Your Signature Scent</h1>
+            <p>Luxury fragrances that define your personality.</p>
+            <a href="#products">Explore Collection</a>
+        </section>
+
+        <section class="shop-section" id="products">
+            <div class="search">
+                <input type="search" id="product-search" placeholder="Search perfumes or brands..." aria-label="Search perfumes">
+            </div>
+            <div class="section-heading">
+                <p class="hero-tag">CURATED FOR YOU</p>
+                <h2>Our Perfume Collection</h2>
+                <p>Find the fragrance for every moment.</p>
+            </div>
+            <div class="category-list" id="category-list" aria-label="Filter perfumes">
+                <button class="category-btn active" data-category="All">All</button>
+                <button class="category-btn" data-category="Men">Men</button>
+                <button class="category-btn" data-category="Women">Women</button>
+                <button class="category-btn" data-category="Unisex">Unisex</button>
+                <button class="category-btn" data-category="Party">Party</button>
+                <button class="category-btn" data-category="Work">Work</button>
+                <button class="category-btn" data-category="Wedding">Wedding & Functions</button>
+                <button class="category-btn" data-category="Casual">Casual</button>
+                <button class="category-btn" data-category="Premium">Premium</button>
+            </div>
+            <div class="product" id="product-list"></div>
+            <p class="no-products" id="no-products" hidden>No perfumes found. Try another search or category.</p>
+        </section>
+
+        <section class="about" id="about">
+            <h1>About Us</h1>
+            <p>At Classy Perfume, we believe a fragrance is more than a scent — it is a personal signature. Explore a carefully selected collection for everyday moments, celebrations and unforgettable occasions. Find a fragrance that feels uniquely yours.</p>
+        </section>
+    </main>
+
+    <footer class="contact" id="contact">
+        <h4>Contact</h4>
+        <p><i class="fa-solid fa-phone"></i> +91 9373917302</p>
+        <p><i class="fa-regular fa-envelope"></i> perfume@gmail.com</p>
+        <p> © 2026 Classy Perfume.</p>
+    </footer>
+</body>
+</html>

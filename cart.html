@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Cart | Classy Perfume</title>
+    <link rel="stylesheet" href="cart.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <script src="cart.js" defer></script>
+</head>
+<body>
+    <nav class="simple-nav">
+        <a href="index.html">Classy Perfume</a>
+        <a href="index.html"><i class="fa-solid fa-arrow-left"></i> Continue Shopping</a>
+    </nav>
+    <main class="page-wrap">
+        <p class="eyebrow">YOUR SELECTION</p>
+        <h1>Shopping Cart</h1>
+        <div id="cart-items" class="cart-items"></div>
+        <div id="cart-empty" class="empty-state" hidden>
+            <i class="fa-solid fa-bag-shopping"></i>
+            <h2>Your cart is empty</h2>
+            <p>Discover a fragrance you'll love.</p>
+            <a class="gold-button" href="index.html#products">Explore Perfumes</a>
+        </div>
+        <section class="cart-summary" id="cart-summary">
+            <div><span>Subtotal</span><strong id="cart-total">₹0</strong></div>
+            <p>Shipping and any applicable charges will be confirmed at checkout.</p>
+            <a class="gold-button" href="checkout.html">Proceed to Checkout</a>
+        </section>
+    </main>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout | Classy Perfume</title>
+    <link rel="stylesheet" href="checkout.css">
+    <script src="checkout.js" defer></script>
+</head>
+<body>
+    <nav class="simple-nav">
+        <a href="index.html">Classy Perfume</a>
+        <a href="cart.html">← Back to Cart</a>
+    </nav>
+    <main class="checkout-wrap">
+        <p class="eyebrow">ALMOST YOURS</p>
+        <h1>Checkout</h1>
+        <div class="checkout-grid" id="checkout-content">
+            <form id="checkout-form" class="checkout-card">
+                <h2>Customer Details</h2>
+                <label>Full Name<input name="name" type="text" required autocomplete="name"></label>
+                <label>Email Address<input name="email" type="email" required autocomplete="email"></label>
+                <label>Phone Number<input name="phone" type="tel" required pattern="[0-9]{10}" maxlength="10" minlength="10" placeholder="10-digit mobile number"></label>
+                <label>Delivery Address<textarea name="address" rows="3" required autocomplete="street-address"></textarea></label>
+                <h2>Payment Method</h2>
+                <label class="payment-option"><input type="radio" name="payment" value="Cash on Delivery" checked> Cash on Delivery</label>
+                <label class="payment-option"><input type="radio" name="payment" value="UPI (Demo)"> UPI (Demo)</label>
+                <p class="demo-note">This is a demo checkout. No real payment is collected and no card or UPI credentials are requested.</p>
+                <button class="gold-button" type="submit">Place Demo Order</button>
+            </form>
+            <aside class="checkout-card">
+                <h2>Order Summary</h2>
+                <div id="checkout-items"></div>
+                <div class="total-line"><span>Total</span><strong id="checkout-total">₹0</strong></div>
+            </aside>
+        </div>
+        <section class="success-card" id="order-success" hidden>
+            <div class="success-mark">✓</div>
+            <h2>Thank you for your order!</h2>
+            <p id="success-message">Your demo order has been placed.</p>
+            <a class="gold-button" href="index.html">Continue Shopping</a>
+        </section>
+    </main>
+</body>
+</html>

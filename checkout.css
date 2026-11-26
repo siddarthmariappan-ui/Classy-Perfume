@@ -1,0 +1,25 @@
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { background: #FAF8F3; color: #29231F; font-family: Georgia, serif; }
+.simple-nav { background: #17130F; padding: 22px 6%; display: flex; justify-content: space-between; align-items: center; }
+.simple-nav a:first-child { color: #D6B36A; font-size: 25px; font-weight: bold; text-decoration: none; }
+.simple-nav a:last-child { color: #F5EEE2; text-decoration: none; }
+.checkout-wrap { max-width: 1050px; margin: 50px auto; padding: 0 20px; }
+.eyebrow { color: #A47732; letter-spacing: 4px; font-size: 12px; margin-bottom: 10px; }
+h1 { color: #8A642B; font-size: 38px; margin-bottom: 25px; }
+.checkout-grid { display: grid; grid-template-columns: 1.3fr 0.8fr; gap: 22px; align-items: start; }
+.checkout-card, .success-card { background: #fff; border: 1px solid #E5DCCB; border-radius: 12px; padding: 25px; }
+.checkout-card h2 { color: #8A642B; font-size: 21px; margin-bottom: 18px; }
+.checkout-card label { display: block; margin-bottom: 15px; font-size: 14px; }
+.checkout-card input:not([type="radio"]), .checkout-card textarea { display: block; width: 100%; margin-top: 7px; padding: 12px; border: 1px solid #C9B994; border-radius: 6px; font: 15px Georgia, serif; }
+.checkout-card textarea { resize: vertical; }
+.checkout-card .payment-option { display: flex; align-items: center; gap: 9px; margin-bottom: 12px; }
+.demo-note { background: #f8f1e3; color: #66502d; padding: 12px; border-radius: 6px; font-size: 12px; line-height: 1.5; margin: 15px 0; }
+.gold-button { display: inline-block; width: 100%; text-align: center; padding: 14px 20px; border: 0; border-radius: 5px; background: #D6B36A; color: #17130F; font-weight: bold; text-decoration: none; cursor: pointer; }
+.summary-item { display: flex; justify-content: space-between; gap: 12px; padding: 12px 0; border-bottom: 1px solid #eee5d7; font-size: 14px; }
+.total-line { display: flex; justify-content: space-between; margin-top: 20px; font-size: 20px; }
+.total-line strong { color: #8A642B; }
+.success-card { max-width: 550px; margin: 35px auto; text-align: center; padding: 45px 25px; }
+.success-card h2 { color: #8A642B; margin-bottom: 12px; }
+.success-card p { margin-bottom: 22px; line-height: 1.6; }
+.success-mark { display: grid; place-items: center; width: 60px; height: 60px; margin: 0 auto 20px; border-radius: 50%; background: #e8f2e5; color: #38733a; font-size: 32px; }
+@media (max-width: 700px) { .checkout-grid { grid-template-columns: 1fr; } .simple-nav { gap: 12px; flex-wrap: wrap; } h1 { font-size: 32px; } }
